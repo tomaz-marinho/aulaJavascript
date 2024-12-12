@@ -67,7 +67,7 @@
 
       Faça um programa para calcular o valorr de uma viagem.
 
-      você terá 3 variáveis. Sendo elas:
+      você terá 5 variáveis. Sendo elas:
 
       1 - Preço do Etanol;
       2 - preço da gasolina;
@@ -78,5 +78,15 @@
       Imrima ano console o valor que eserá gasto para realizar esta viagem.
 
       */
-     
+
+      const precoCombustivel = 5.79;
+      const kmPorLitro = 12;
+      const distanciaEmKm = 2080;
+      
+      const litrosConsumidos = distanciaEmKm / kmPorLitro;
+      const gasto = litrosConsumidos * precoCombustivel;
+      
+      
+      console.log (gasto.toFixed(2));
+
 
