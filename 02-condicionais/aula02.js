@@ -16,77 +16,88 @@
   } 
     --------------------------------------------------*/
 
-    /* AULA DE ESTRUTURA CONDICIONAIS
+/* AULA DE ESTRUTURA CONDICIONAIS
 
-    const numero = 3
+const numero = 3
 
-    const numeroPar = (numero % 2) === 0;
-    
-    
-    if(numeroPar){
-      console.log('Par');
-  
-    }else{
-      console.log('Impar');
-    }
-  --------//-------------//----------------//-
+const numeroPar = (numero % 2) === 0;
+ 
+ 
+if(numeroPar){
+  console.log('Par');
+ 
+}else{
+  console.log('Impar');
+}
+--------//-------------//----------------//-
 
-    const numero = 15;
-    const numeroDivisivelPor5 = (numero % 5) === 0;
-    
-    if(numero === 0){
-      console.log('O numero é invalido');
-    }
+const numero = 15;
+const numeroDivisivelPor5 = (numero % 5) === 0;
+ 
+if(numero === 0){
+  console.log('O numero é invalido');
+}
 
-    else if(numeroDivisivelPor5){
-      console.log('Sim');
-  
-    }else{
-      console.log('Não');
-    }
-    --------------------------------------------------*/
+else if(numeroDivisivelPor5){
+  console.log('Sim');
+ 
+}else{
+  console.log('Não');
+}
+--------------------------------------------------*/
 
-    /* REVISÃO E DICAS DE BOAS PRATICAS
-    
-    REDUZINDO A ESTRUTURA 
+/* REVISÃO E DICAS DE BOAS PRATICAS
+ 
+REDUZINDO A ESTRUTURA 
 
-    const numero = 15;
-    
-    if(numero % 5) === 0){
-      console.log('O numero é Par');
+const numero = 15;
+ 
+if(numero % 5) === 0){
+  console.log('O numero é Par');
 
-    }else {
-      console.log('O numero é Impar');
-    }*/
+}else {
+  console.log('O numero é Impar');
+}*/
 
-      /*
-      --------------------------------------------------
-      Incremento do Calculo de Valor de Uma Viagem 
+/*
+--------------------------------------------------
+Incremento do Calculo de Valor de Uma Viagem 
 
-      Questionário:
+Questionário:
 
-      Faça um programa para calcular o valorr de uma viagem.
+Faça um programa para calcular o valorr de uma viagem.
 
-      você terá 5 variáveis. Sendo elas:
+você terá 5 variáveis. Sendo elas:
 
-      1 - Preço do Etanol;
-      2 - preço da gasolina;
-      3 - o tipo de combustivel que está no seu carro;
-      4 - gasto médio do combustivel do caarro por km;
-      5 - distância em km d viagem; 
+1 - Preço do Etanol;
+2 - preço da gasolina;
+3 - o tipo de combustivel que está no seu carro;
+4 - gasto médio do combustivel do caarro por km;
+5 - distância em km d viagem; 
 
-      Imrima ano console o valor que eserá gasto para realizar esta viagem.
+Imrima ano console o valor que eserá gasto para realizar esta viagem.
 
-      */
+*/
 
-      const precoCombustivel = 5.79;
-      const kmPorLitro = 12;
-      const distanciaEmKm = 2080;
-      
-      const litrosConsumidos = distanciaEmKm / kmPorLitro;
-      const gasto = litrosConsumidos * precoCombustivel;
-      
-      
-      console.log (gasto.toFixed(2));
+const precoEtanol = 5.79;
+const precoGasolina = 6.66
+const kmPorLitro = 10;
+const distanciaEmKm = 100;
+const tipoCombustivel = 'gasolina';
+
+const litrosConsumidos = distanciaEmKm / kmPorLitro;
+
+
+if (tipoCombustivel === 'etanol') {
+  const valorGasto = litrosConsumidos * precoEtanol;
+  console.log(valorGasto.toFixed(2));
+} else {
+  const valorGasto = litrosConsumidos * precoGasolina;
+  console.log(valorGasto.toFixed(2));
+}
+
+
+
+
 
 
